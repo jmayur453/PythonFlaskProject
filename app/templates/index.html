@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "_translate_section.html" %}
+    {% include "_image_editor_section.html" %}
+    {% include "_ascii_section.html" %}
+    {% include "_handwriting_section.html" %}
+    {% include "_chatbot_section.html" %}
+    {% include "_geolocation_section.html" %}
+    <!-- <div id="chatbot" style="display:block;">
+        <h3>Ask Gemini 2.0 Flash</h3>
+        <textarea id="userMessage" rows="4" cols="50" placeholder="Ask something..."></textarea><br>
+        <button onclick="sendMessage()">Send</button>
+        <div id="chatbotResponse" style="margin-top: 10px; font-style: italic;"></div>
+    </div> -->
+{% endblock %}

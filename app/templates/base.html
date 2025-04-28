@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Header -->
+        <h2>{% block header %}Welcome Page{% endblock %}</h2>
+
+        <!-- Dark Mode Toggle -->
+        <div class="toggle-bar">
+            <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button onclick="showSection('translate')">Language Translator</button>
+            <button onclick="showSection('editImage')">Image Editor</button>
+            <button onclick="showSection('asciiArt')">ASCII Art</button>
+            <button onclick="showSection('handwriting')">Text To Handwriting</button>
+            <button onclick="showSection('chatbot')">Chatbot</button>
+            <button onclick="showSection('geolocation')">Geolocation Tracker</button>
+        </div>
+
+        <!-- Content Sections -->
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

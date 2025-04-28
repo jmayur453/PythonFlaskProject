@@ -1,0 +1,76 @@
+<div id="chatbot" class="section">
+    <h2>🧠 Ask Gemini 2.0 Flash</h2>
+
+    <div class="chatbot-card">
+        <textarea id="userMessage" placeholder="Ask something..." rows="4"></textarea>
+        <button onclick="sendMessage()">🚀 Ask Gemini</button>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="chatbotResponse" class="response-box"></div>
+    </div>
+</div>
+
+<style>
+    #chatbot-section {
+        padding: 20px;
+        background-color: var(--bg-color, #fff);
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: auto;
+        transition: background 0.3s;
+    }
+
+    .chatbot-card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 0.75rem;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        resize: vertical;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 0.75rem;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .response-box {
+        padding: 15px;
+        background-color: #f8f8f8;
+        border-radius: 0.75rem;
+        border: 1px solid #ddd;
+        font-style: italic;
+        white-space: pre-wrap;
+    }
+
+    .loader {
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #4CAF50;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        animation: spin 0.8s linear infinite;
+        margin: auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>

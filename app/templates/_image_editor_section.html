@@ -1,0 +1,25 @@
+
+
+        <!-- Image Editor Section -->
+        <div id="editImage" class="section">
+            <form id="imageForm">
+                <input type="file" id="imageInput" name="image" accept="image/*" required><br>
+
+                <label>Choose an effect:</label>
+                <select id="effectSelect">
+                    <option value="resize">Resize (300x300)</option>
+                    <option value="grayscale">Grayscale</option>
+                    <option value="blur">Blur</option>
+                    <option value="sharpen">Sharpen</option>
+                    <option value="sepia">Sepia</option>
+                    <option value="invert">Invert</option>
+                    <option value="flip_horizontal">Flip Horizontal</option>
+                    <option value="flip_vertical">Flip Vertical</option>
+                    <option value="rotate_90">Rotate 90°</option>
+                </select><br><br>
+
+                <button class="primary" type="submit">Apply Effect</button>
+            </form>
+
+            <div id="imageResult"></div>
+        </div>

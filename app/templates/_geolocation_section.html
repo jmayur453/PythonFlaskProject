@@ -1,0 +1,15 @@
+<!-- Geolocation Section -->
+<div id="geolocation" class="section">
+    <button class="primary" onclick="getGeolocation()">📍 Track My Location</button>
+    <div id="geoLoader" style="display:none;">🔄 Fetching location...</div>
+
+    <div id="geoResult" style="display:none;">
+        <h3>Your Location Info:</h3>
+        <p><strong>IP:</strong> <span id="ip"></span></p>
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>Region:</strong> <span id="region"></span></p>
+        <p><strong>Country:</strong> <span id="country"></span></p>
+        <p><strong>Address:</strong> <span id="address"></span></p>
+        <iframe src="{{ map_url }}" width="100%" height="600"></iframe>
+    </div>
+</div>

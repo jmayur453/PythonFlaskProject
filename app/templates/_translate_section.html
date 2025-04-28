@@ -1,0 +1,16 @@
+
+        <!-- Translate Section -->
+        <div id="translate" class="section active">
+            <select id="languageSelect">
+                <option value="hi">Hindi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+
+            <textarea id="inputText" rows="4" placeholder="Type something in English..."></textarea>
+            <button class="primary" onclick="translateText()">Translate</button>
+            <div id="loader" style="display:none;">🔄 Translating...</div>
+            <h3>Translated:</h3>
+            <div id="translatedText" class="multicolor"></div>
+            <button id="speakBtn" onclick="speakText()" style="display:none;">🔊 Speak</button>
+        </div>
