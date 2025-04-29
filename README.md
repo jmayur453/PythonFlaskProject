@@ -102,5 +102,3 @@ Googletrans
 Pillow
 
 New Features coming Soon on 1 May
-
-line 1 by local
