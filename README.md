@@ -101,4 +101,8 @@ Googletrans
 
 Pillow
 
+<<<<<<< HEAD
 New Features coming Soon 2 May
+=======
+New Features coming Soon on 1 May
+>>>>>>> 9bddf383d5db27c89fdd66f0ecf3cc25b9d6fdfc
