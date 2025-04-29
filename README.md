@@ -100,3 +100,5 @@ OpenAI
 Googletrans
 
 Pillow
+
+New Features coming Soon
