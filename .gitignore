@@ -9,3 +9,5 @@ venv/
 /.vs/PythonFlaskProject/CopilotIndices/17.14.90.56529
 /.vs/PythonFlaskProject/FileContentIndex
 *.sqlite
+
+/.vs
