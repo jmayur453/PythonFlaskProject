@@ -100,3 +100,6 @@ OpenAI
 Googletrans
 
 Pillow
+
+New Features coming Soon on 1 May
+branch commit 1
