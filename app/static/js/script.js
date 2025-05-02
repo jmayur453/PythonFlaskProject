@@ -207,6 +207,36 @@ function initMap(lat, lon, city, country) {
         .openPopup();
 }
 
+function downloadVideo() {
+    const url = document.getElementById("youtubeUrl").value;
+    const loader = document.getElementById("yt-loader");
+    const responseBox = document.getElementById("ytResponse");
+
+    if (!url.trim()) {
+        responseBox.innerText = "Please enter a valid YouTube URL.";
+        return;
+    }
+
+    loader.style.display = "block";
+    responseBox.innerText = "";
+
+    fetch('/download', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: url })
+    })
+    .then(response => response.json())
+    .then(data => {
+        loader.style.display = "none";
+        responseBox.innerText = data.message;
+        responseBox.style.color = data.status === "success" ? "green" : "red";
+    })
+    .catch(error => {
+        loader.style.display = "none";
+        responseBox.innerText = "Download failed.";
+        console.error("Error:", error);
+    });
+}
 
 
 

@@ -155,3 +155,56 @@ body {
     color: #fff;
     cursor: pointer;
 }
+.downloader-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 0.75rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d32f2f;
+    color: white;
+    font-size: 16px;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.response-box {
+    font-style: italic;
+    color: green;
+    white-space: pre-wrap;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #d32f2f;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    animation: spin 0.8s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

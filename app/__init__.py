@@ -14,6 +14,7 @@ def create_app():
     from app.routes.chatbot_routes import chatbot_api
     from app.routes.geolocation_routes import geolocation_api
     from app.routes.map_view import map_view
+    from app.routes.youtube_downloader_route import youtube_api
 
     app.register_blueprint(main_routes)
     app.register_blueprint(translate_api)
@@ -23,4 +24,5 @@ def create_app():
     app.register_blueprint(chatbot_api) 
     app.register_blueprint(geolocation_api) 
     app.register_blueprint(map_view) 
+    app.register_blueprint(youtube_api)
     return app

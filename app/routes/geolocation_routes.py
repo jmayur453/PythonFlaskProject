@@ -17,6 +17,7 @@ def handle_geolocation():
             'address': location_data['address'],
             'map_url': location_data['map_url']  # Provide the correct map URL
         })
+    
     except Exception as e:
         print(f"Error: {str(e)}")  # Log the error to the console for easier debugging
         return jsonify({'success': False, 'message': str(e)}), 500
